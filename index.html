@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-image: linear-gradient(rgb(222, 56, 56), rgb(61, 90, 88));
+            display: block;
+            text-align: -webkit-center;
+            unicode-bidi: isolate;
+        }
+        .header{
+            text-align: center;
+            background-image: linear-gradient(rgb(138, 98, 98), rgb(48, 71, 70));
+            color: azure;
+            padding: 5px;
+        }
+
+        button{
+            background-color:rgb(191, 122, 151);
+            color: beige;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 10px;
+            transition-property: background-color;
+            transition-delay: 0.29s;
+        }
+
+        button:hover{
+            background-color: rgb(108, 104, 89);
+        }
+
+        img{
+            margin-top: 8%;
+            margin-bottom: 8px;
+            position: relative;
+            transition: all 3s;
+        }
+
+        #Rotate:hover~.main img{
+            transform: rotate(300deg);
+        }
+
+        #Skew:hover~.main img{
+            transform: skewY(20deg);
+        }
+
+        #Scale:hover~.main img{
+            transform: scale(2);
+        }
+
+        #Translate:hover~.main img{
+            transform: translate(50px, 80px);
+        }
+        footer{
+            height: 50px;
+            color: rgb(255, 252, 252);
+            margin-top: 18px;
+            background-color: black;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h1>Transforms Example</h1></div>
+        <div class="content">
+            <button id="Rotate">Rotate</button>
+            <button id="Skew">Skew</button>
+            <button id="Scale">Scale</button>
+            <button id="Translate">Translate</button>
+            <div class="main"><img src="https://pics.craiyon.com/2023-07-04/d03a54cd29bb40f898feeb1387f30c7d.webp" width="300px" height="300pxs"></div>
+        </div>
+    </div>
+    <footer><h4>@copyright 2024</h4></footer>
+</body>
+</html>
